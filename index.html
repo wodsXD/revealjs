@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lenguaje C++</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/moon.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <style>
+      h1, h2, h3 { color: #00bcd4 !important; }
+      .reveal section { font-size: 1.1em; }
+      .reveal p { color: #f5f5f5; }
+      .credits {
+        font-size: 0.8em;
+        color: #ccc;
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>Lenguaje C++</h1>
+          <p><strong>Materia:</strong> Estructura de Datos</p>
+          <p><strong>Docente:</strong> Manuel Alejandro Guzmán Hernández</p>
+          <p><strong>Equipo:</strong></p>
+          <ul>
+            <li>García Vaca María Guadalupe</li>
+            <li>Molina Moreno Fernando Esteban</li>
+            <li>Pérez Barroso Oswaldo Rafael</li>
+            <li>Reyes Limas Alexandra Berenice</li>
+            <li>Ríos Rodríguez Alberto Alessandro</li>
+            <li>Varela Zuñiga Ximena Lizzet</li>
+          </ul>
+          <p>Octubre 2025</p>
+        </section>
+
+        <section>
+          <h2>Índice de Contenidos</h2>
+          <ul>
+            <li>¿Qué es C++?</li>
+            <li>Conceptos básicos</li>
+            <li>Arrays (Arreglos)</li>
+            <li>Cadenas (Strings)</li>
+            <li>Listas</li>
+            <li>Pilas (Stacks)</li>
+            <li>Colas (Queues)</li>
+            <li>Conjuntos y Diccionarios</li>
+            <li>Árboles</li>
+            <li>Conclusión</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>¿Qué es C++?</h2>
+          <p>Lenguaje de programación multiparadigma (orientado a objetos y procedural).</p>
+          <p>Ampliación de C creada por <strong>Bjarne Stroustrup (1983)</strong>.</p>
+          <p>Usado en software de alto rendimiento como videojuegos, sistemas embebidos y simuladores.</p>
+        </section>
+
+        <section>
+          <h2>Conceptos Básicos</h2>
+          <ul>
+            <li><strong>Sintaxis:</strong> Basada en C, usa llaves <code>{ }</code> y punto y coma <code>;</code>.</li>
+            <li><strong>Tipos de datos:</strong> int, float, double, char, bool.</li>
+            <li><strong>Declaración de variables:</strong> tipo + nombre.</li>
+            <li><strong>Entrada/salida:</strong> <code>cin</code> y <code>cout</code>.</li>
+            <li><strong>Estructura general:</strong> <code>#include</code>, <code>main()</code>, instrucciones.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Arrays (Arreglos)</h2>
+          <p>Un array almacena varios elementos del mismo tipo.</p>
+          <ul>
+            <li>Datos contiguos en memoria.</li>
+            <li>Acceso por índices desde 0.</li>
+            <li>Tamaño fijo durante la ejecución.</li>
+            <li>Usado para listas que no cambian, como calificaciones.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Cadenas (Strings)</h2>
+          <ul>
+            <li>Arreglo de caracteres.</li>
+            <li>En C se usa <code>char nombre[]</code>, en C++ moderno <code>std::string</code>.</li>
+            <li>Permiten manipular texto: concatenar, medir longitud, extraer partes.</li>
+            <li>Usos: mensajes, nombres, texto del usuario.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Listas</h2>
+          <p>Son estructuras dinámicas, a diferencia de los arrays.</p>
+          <ul>
+            <li>Permiten insertar y eliminar nodos sin reorganizar toda la memoria.</li>
+            <li>Cada nodo apunta al siguiente.</li>
+            <li>Tipos: <code>list</code> (doblemente enlazada) y <code>forward_list</code> (simple).</li>
+            <li>Útiles cuando los datos cambian constantemente.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Pilas (Stacks)</h2>
+          <ul>
+            <li>Estructura <strong>LIFO</strong>: último en entrar, primero en salir.</li>
+            <li>Operaciones: <code>push</code>, <code>pop</code>, <code>top</code>.</li>
+            <li>Uso: almacenamiento de funciones (stack de ejecución).</li>
+            <li>Aplicaciones: algoritmos de deshacer (Ctrl+Z).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Colas (Queues)</h2>
+          <ul>
+            <li>Estructura <strong>FIFO</strong>: primero en entrar, primero en salir.</li>
+            <li>Operaciones: <code>enqueue</code> (insertar), <code>dequeue</code> (eliminar).</li>
+            <li>Usos: impresión, tareas, redes.</li>
+            <li>Variante: <code>priority_queue</code> (ordenada por prioridad).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conjuntos (Set) y Diccionarios (Map)</h2>
+          <ul>
+            <li><strong>set:</strong> colección sin elementos repetidos.</li>
+            <li><strong>map:</strong> almacena pares clave → valor.</li>
+            <li>Permiten búsquedas rápidas.</li>
+            <li>Implementados como árboles balanceados.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Árboles</h2>
+          <p>Estructura jerárquica de nodos con valores y punteros a hijos.</p>
+          <ul>
+            <li>Tipos: binario, AVL, heap, búsqueda binaria.</li>
+            <li>Usos: bases de datos, índices, jerarquías.</li>
+            <li>Permiten búsquedas muy rápidas.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conclusión</h2>
+          <p>C++ sigue siendo uno de los pilares de la programación moderna por su potencia y cercanía al hardware.</p>
+          <p>Sus estructuras de datos permiten organizar la información de forma eficiente.</p>
+          <p>Comprenderlas ayuda a diseñar programas más rápidos y mantenibles.</p>
+          <p>Aplicaciones: sistemas operativos, videojuegos, buscadores y bases de datos.</p>
+        </section>
+
+        <section>
+          <h2>Bibliografía</h2>
+          <ul>
+            <li>Bräunlich, S. (2024). <em>cplusplus.com</em> - The C++ Resources Network. <a href="https://cplusplus.com/reference/">cplusplus.com</a></li>
+            <li>GeeksforGeeks (2024). <em>Programación en C++</em>. <a href="https://www.geeksforgeeks.org/c-plus-plus/">geeksforgeeks.org</a></li>
+            <li>Microsoft Learn (2024). <em>Conceptos básicos de C++</em>. <a href="https://learn.microsoft.com/es-es/cpp/">learn.microsoft.com</a></li>
+            <li>Stroustrup, B. (2023). <em>The C++ Programming Language (4th ed.)</em>. Addison-Wesley.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>¡Gracias!</h1>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        transition: 'slide',
+        slideNumber: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      });
+    </script>
+  </body>
+</html>
